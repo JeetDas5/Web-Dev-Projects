@@ -11,5 +11,6 @@ orderRouter.post("/verify", verifyOrder)
 orderRouter.post("/userorders", authMiddleware, userOrders)
 orderRouter.get("/list", listOrders)
 orderRouter.post("/status", authMiddleware, updateStatus)
+orderRouter.put("/updatestatus", authMiddleware, updateStatus)
 
 export default orderRouter
